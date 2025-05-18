@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Squad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+
+<body>
+    <nav>
+        <h2>Syntax Squad</h2>
+        <ul class="sidebar">
+            <li><a href="#" class="close" onclick="closeSidebar()"><img src="icons/close.svg" class="close"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="navbar">
+            <li><a href="#" class="hideOnMobile">Home</a></li>
+            <li><a href="#" class="hideOnMobile">Our Team</a></li>
+            <li><a href="#" class="hideOnMobile">Projects</a></li>
+            <li><a href="#" class="hideOnMobile">Services</a></li>
+            <li><a href="#" class="hideOnMobile">Contact</a></li>
+            <li><a href="#" class="menu" onclick="showSidebar()"><i class='bx  bx-menu-wide'><img src="icons/menu.svg"></i></a> </a></li>
+        </ul>
+        <button><a href="">Login</a></button>
+    </nav>
+
+<div class="intro">
+    <div class="text">
+        <h2 class="heading2">Welcome to <span>Syntax Squad!</span></h2>
+        <p>Our squad consists members of 4. Abid Ruhit Noyan and Tahmid<br>
+            I am Tahmid! The Developer of this Website. This website is still a part<br>
+            of my learning capacity of Web Developing. Our Aim is to provide the best services<br>
+            from BD
+        </p>
+    </div>
+</div> 
+    
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
+
